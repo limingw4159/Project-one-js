@@ -1,0 +1,30 @@
+1 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var o = {
+        name: "andy",
+      };
+      function fn(a, b) {
+        console.log(a + b);
+      }
+      //call第一个可以调用函数,第二个可以改变函数内的this指向
+      //call的主要作用可以实现继承
+      fn.call(o, 1, 2);
+      function Father(uname, age, sex) {
+        this.uname = uname;
+        this.age = age;
+        this.sex = sex;
+      }
+      function Son(name, age, sex) {
+        Father.call(this, name, age, sex);
+      }
+    </script>
+  </body>
+</html>

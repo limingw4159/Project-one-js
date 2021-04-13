@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //验证座机号码格式为:010-12345678  或者0530-1234567
+      //正则里面的或用一个| 来表示
+      var reg = /^\d{3}-\d{8}|\d{4}-\d{7}$/;
+      //另外一种写法:
+      var reg1 = /^\d{3,4}-\d{7,8}$/;
+    </script>
+  </body>
+</html>

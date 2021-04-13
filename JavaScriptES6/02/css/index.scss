@@ -1,0 +1,66 @@
+@import "liactive";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+
+  h4 {
+    padding: 50px;
+    text-align: center;
+  }
+  .tabbox {
+    border: 1px black solid;
+    height: 500px;
+    position: relative;
+
+    .tabbox__nav {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      display: block;
+      padding-left: 0%;
+
+      ul {
+        padding: 10px;
+        padding-right: 0;
+        margin-left: -10px;
+        li {
+          border: 1px solid black;
+          padding-right: 70px;
+          border-left: 0px;
+          padding-top: 10px;
+          padding-left: 10px;
+          padding-bottom: 10px;
+          text-align: center;
+          display: inline;
+          width: 100px;
+          list-style: none;
+
+          .tabbox__iconfont--guangbi {
+            position: absolute;
+            margin-left: 30px;
+            margin-top: -9px;
+            background-image: url("../image/download.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+      .tabbox__add {
+        float: right;
+        padding-top: 10px;
+        padding-right: 10px;
+        margin-top: -40px;
+      }
+    }
+  }
+  .tabbox__scon section {
+    display: none;
+    visibility: hidden;
+  }
+}

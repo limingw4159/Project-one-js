@@ -1,0 +1,9 @@
+#tabbox .tabbox__nav .liactive {
+  border-bottom: 0px;
+}
+
+main .tabbox__scon #sectionactive {
+  display: inline-block;
+  visibility: visible;
+}
+/*# sourceMappingURL=liactive.css.map */

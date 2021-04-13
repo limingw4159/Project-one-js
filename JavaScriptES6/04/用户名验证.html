@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: #aaa;
+        font-size: 14px;
+      }
+      .right {
+        color: green;
+      }
+      .wrong {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" class="uname" /><span>
+      please enter your login name
+    </span>
+
+    <script>
+      var reg = /^[a-zA-Z0-9_-]{6,16}$/;
+
+      var uname = document.querySelector(".uname");
+      var span = document.querySelector("span");
+      uname.onblur = function () {
+        //获取input里面的值
+        if (reg.test(this.value)) {
+          span.className = "right";
+          span.innerHTML = "the right user format";
+        } else {
+          span.className = "wrong";
+          span.innerHTML("the wrong user format");
+        }
+      };
+    </script>
+  </body>
+</html>

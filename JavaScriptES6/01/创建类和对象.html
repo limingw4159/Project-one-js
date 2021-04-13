@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>click</button>
+    <script>
+        //创建类
+        var that;
+        var _that;
+        class Star {
+            constructor(uname, age) {
+                that = this;
+                console.log(this);
+                this.uname = uname;
+                this.age = age;
+                this.btn = document.querySelector('button');
+                this.btn.onclick = this.sing;
+
+            }
+            sing(song) {
+                console.log(this);
+                console.log(this.uname + song);
+                console.log(that.uname);
+
+            }
+            dance() {
+                _that = this;
+                console.log(this);
+            }
+        }
+        var zxy = new Star('zhangxueyou', 22)
+        var ldh = new Star('liudehua', 34);
+        ldh.dance();
+        console.log(that === ldh);
+        console.log(_that === ldh);
+        console.log(ldh);
+        console.log(zxy);
+        zxy.sing('bingyu');
+        ldh.sing('lenglengde bingxu');
+    </script>
+
+</body>
+
+</html>
