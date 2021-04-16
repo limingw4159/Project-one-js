@@ -12,6 +12,7 @@ body {
 
 @media screen and (min-device-width: 720px) {
   header {
+    max-width: 1000px;
     margin: 20px 10px 10px 20px;
   }
   header .nav__left {
@@ -104,7 +105,7 @@ body {
   }
   .mainhome__down__details1 p {
     margin: 0px 0px 0px 50px;
-    width: 350px;
+    max-width: 350px;
   }
   .mainhome__down__details2 {
     margin: 40px 40px 0px 0px;
