@@ -11,7 +11,7 @@ body {
 @media screen and (min-device-width: 720px) {
   header {
     margin: 20px 10px 10px 20px;
-    padding: 20px;
+
     .nav__left {
       float: left;
       margin-left: 40px;
@@ -36,34 +36,101 @@ body {
         }
       }
     }
+    .fa-list {
+      color: white;
+      display: none;
+    }
   }
 
   .mainhome {
+    max-width: 1000px;
     &__top {
+      display: flex;
+      position: relative;
       background-color: rgb(45, 162, 211);
       margin: 0px 40px 0px 40px;
       padding: 20px;
-      flex-direction: row;
-      flex-wrap: wrap;
+      height: 220px;
+      border-radius: 20px 20px 0px 0px;
       justify-content: space-between;
 
-      height: 100px;
-      border-radius: 20px 20px 0px 0px;
-
       img {
-        margin-left: 20px;
+        // position: absolute;
+        float: left;
+        margin: 40px 50px 0px 50px;
         border: white solid 2px;
+        width: 200px;
+        height: 200px;
 
-        width: 150px;
+        z-index: 1;
       }
       div {
+        float: right;
+        // margin-right: 100px;
+        text-align: center;
+        color: rgb(225, 118, 118);
+        z-index: 1;
+
+        p {
+          margin-top: 50px;
+          font-size: 50px;
+        }
+        span {
+          font-size: 40px;
+        }
+      }
+    }
+    &__down {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: relative;
+      background-color: white;
+      padding: 20px;
+      height: 300px;
+      margin: 0px 40px 0px 40px;
+      border-radius: 0px 0px 20px 20px;
+
+      &__details1 {
+        h3 {
+          margin: 50px 0px 20px 50px;
+        }
+        p {
+          margin: 0px 0px 0px 50px;
+          width: 350px;
+        }
+      }
+      &__details2 {
+        margin: 40px 40px 0px 0px;
+        table {
+          tr {
+            padding: 20px;
+            td {
+              padding: 10px;
+            }
+          }
+        }
       }
     }
   }
 }
 
 @media screen and (max-width: 720px) {
+  header {
+    .nav__right {
+      ul {
+        display: none;
+      }
+    }
+    .fa-list {
+      position: absolute;
+      margin-top: -11px;
+      display: block;
+    }
+  }
 }
+
 .clearfix:after {
   content: "";
   display: block;
