@@ -1,9 +1,73 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
   background-color: rgb(225, 222, 222);
+}
+@media screen and (min-device-width: 720px) {
+  header {
+    margin: 20px 10px 10px 20px;
+    padding: 20px;
+    .nav__left {
+      float: left;
+      margin-left: 40px;
+      font-size: 30px;
+      color: white;
+      span {
+        color: rgb(103, 46, 160);
+      }
+    }
+    .nav__right {
+      float: right;
+      padding: 20px;
+      li {
+        padding: 20px;
+        list-style: none;
+        float: left;
+        margin-top: -30px;
+
+        a {
+          color: rgb(245, 132, 11);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .mainhome {
+    &__top {
+      background-color: rgb(45, 162, 211);
+      margin: 0px 40px 0px 40px;
+      padding: 20px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      height: 100px;
+      border-radius: 20px 20px 0px 0px;
+
+      img {
+        margin-left: 20px;
+        border: white solid 2px;
+
+        width: 150px;
+      }
+      div {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
