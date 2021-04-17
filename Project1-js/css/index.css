@@ -8,114 +8,133 @@
 html,
 body {
   background-color: #e1dede;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
-@media screen and (min-device-width: 720px) {
-  header {
-    max-width: 1000px;
-    margin: 20px 10px 10px 20px;
-  }
-  header .nav__left {
-    float: left;
-    margin-left: 40px;
-    font-size: 30px;
-    color: white;
-  }
-  header .nav__left span {
-    color: #672ea0;
-  }
-  header .nav__right {
-    float: right;
-    padding: 20px;
-  }
-  header .nav__right li {
-    padding: 20px;
-    list-style: none;
-    float: left;
-    margin-top: -30px;
-  }
-  header .nav__right li a {
-    color: #f5840b;
-    text-decoration: none;
-  }
-  header .fa-list {
-    color: white;
-    display: none;
-  }
-  .mainhome {
-    max-width: 1000px;
-  }
-  .mainhome__top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    background-color: #2da2d3;
-    margin: 0px 40px 0px 40px;
-    padding: 20px;
-    height: 220px;
-    border-radius: 20px 20px 0px 0px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .mainhome__top img {
-    float: left;
-    margin: 40px 50px 0px 50px;
-    border: white solid 2px;
-    width: 200px;
-    height: 200px;
-    z-index: 1;
-  }
-  .mainhome__top div {
-    float: right;
-    text-align: center;
-    color: #e17676;
-    z-index: 1;
-  }
-  .mainhome__top div p {
-    margin-top: 50px;
-    font-size: 50px;
-  }
-  .mainhome__top div span {
-    font-size: 40px;
-  }
-  .mainhome__down {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    position: relative;
-    background-color: white;
-    padding: 20px;
-    height: 300px;
-    margin: 0px 40px 0px 40px;
-    border-radius: 0px 0px 20px 20px;
-  }
-  .mainhome__down__details1 h3 {
-    margin: 50px 0px 20px 50px;
-  }
-  .mainhome__down__details1 p {
-    margin: 0px 0px 0px 50px;
-    max-width: 350px;
-  }
-  .mainhome__down__details2 {
-    margin: 40px 40px 0px 0px;
-  }
-  .mainhome__down__details2 table tr {
-    padding: 20px;
-  }
-  .mainhome__down__details2 table tr td {
-    padding: 10px;
-  }
+header {
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+header .nav__left {
+  float: left;
+  margin-left: 40px;
+  font-size: 30px;
+  color: white;
+}
+
+header .nav__left span {
+  color: #672ea0;
+}
+
+header .nav__right {
+  float: right;
+  padding: 20px;
+}
+
+header .nav__right li {
+  padding: 20px;
+  list-style: none;
+  float: left;
+  margin-top: -30px;
+}
+
+header .nav__right li a {
+  color: #f5840b;
+  text-decoration: none;
+}
+
+header .fa-list {
+  color: white;
+  display: none;
+}
+
+.mainhome {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mainhome__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  background-color: #2da2d3;
+  margin: 0px 40px 0px 40px;
+  padding: 20px;
+  height: 220px;
+  border-radius: 20px 20px 0px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainhome__top img {
+  float: left;
+  margin: 40px 50px 0px 50px;
+  border: white solid 2px;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+
+.mainhome__top div {
+  float: right;
+  text-align: center;
+  color: #e17676;
+  z-index: 1;
+}
+
+.mainhome__top div p {
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.mainhome__top div span {
+  font-size: 40px;
+}
+
+.mainhome__down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  height: 300px;
+  margin: 0px 40px 0px 40px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.mainhome__down__details1 h3 {
+  margin: 50px 0px 20px 50px;
+}
+
+.mainhome__down__details1 p {
+  margin: 0px 0px 0px 50px;
+  max-width: 350px;
+}
+
+.mainhome__down__details2 {
+  margin: 40px 40px 0px 0px;
+}
+
+.mainhome__down__details2 table tr {
+  padding: 20px;
+}
+
+.mainhome__down__details2 table tr td {
+  padding: 10px;
 }
 
 @media screen and (max-width: 720px) {

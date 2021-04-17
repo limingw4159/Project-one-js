@@ -7,109 +7,113 @@
 html,
 body {
   background-color: rgb(225, 222, 222);
+  max-width: 1500px;
+  margin: 0 auto;
 }
+
 @media screen and (min-device-width: 720px) {
-  header {
-    max-width: 1000px;
-    margin: 20px 10px 10px 20px;
+}
+header {
+  max-width: 1000px;
+  margin: 20px auto;
 
-    .nav__left {
-      float: left;
-      margin-left: 40px;
-      font-size: 30px;
-      color: white;
-      span {
-        color: rgb(103, 46, 160);
-      }
-    }
-    .nav__right {
-      float: right;
-      padding: 20px;
-      li {
-        padding: 20px;
-        list-style: none;
-        float: left;
-        margin-top: -30px;
-
-        a {
-          color: rgb(245, 132, 11);
-          text-decoration: none;
-        }
-      }
-    }
-    .fa-list {
-      color: white;
-      display: none;
+  .nav__left {
+    float: left;
+    margin-left: 40px;
+    font-size: 30px;
+    color: white;
+    span {
+      color: rgb(103, 46, 160);
     }
   }
-
-  .mainhome {
-    max-width: 1000px;
-    &__top {
-      display: flex;
-      position: relative;
-      background-color: rgb(45, 162, 211);
-      margin: 0px 40px 0px 40px;
+  .nav__right {
+    float: right;
+    padding: 20px;
+    li {
       padding: 20px;
-      height: 220px;
-      border-radius: 20px 20px 0px 0px;
-      justify-content: space-between;
+      list-style: none;
+      float: left;
+      margin-top: -30px;
 
-      img {
-        // position: absolute;
-        float: left;
-        margin: 40px 50px 0px 50px;
-        border: white solid 2px;
-        width: 200px;
-        height: 200px;
-
-        z-index: 1;
-      }
-      div {
-        float: right;
-        // margin-right: 100px;
-        text-align: center;
-        color: rgb(225, 118, 118);
-        z-index: 1;
-
-        p {
-          margin-top: 50px;
-          font-size: 50px;
-        }
-        span {
-          font-size: 40px;
-        }
+      a {
+        color: rgb(245, 132, 11);
+        text-decoration: none;
       }
     }
-    &__down {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      flex-wrap: wrap;
-      position: relative;
-      background-color: white;
-      padding: 20px;
-      height: 300px;
-      margin: 0px 40px 0px 40px;
-      border-radius: 0px 0px 20px 20px;
+  }
+  .fa-list {
+    color: white;
+    display: none;
+  }
+}
 
-      &__details1 {
-        h3 {
-          margin: 50px 0px 20px 50px;
-        }
-        p {
-          margin: 0px 0px 0px 50px;
-          max-width: 350px;
-        }
+.mainhome {
+  max-width: 1000px;
+  margin: 0 auto;
+  &__top {
+    display: flex;
+    position: relative;
+    background-color: rgb(45, 162, 211);
+    margin: 0px 40px 0px 40px;
+    padding: 20px;
+    height: 220px;
+    border-radius: 20px 20px 0px 0px;
+    justify-content: space-between;
+
+    img {
+      // position: absolute;
+      float: left;
+      margin: 40px 50px 0px 50px;
+      border: white solid 2px;
+      width: 200px;
+      height: 200px;
+
+      z-index: 1;
+    }
+    div {
+      float: right;
+      // margin-right: 100px;
+      text-align: center;
+      color: rgb(225, 118, 118);
+      z-index: 1;
+
+      p {
+        margin-top: 50px;
+        font-size: 50px;
       }
-      &__details2 {
-        margin: 40px 40px 0px 0px;
-        table {
-          tr {
-            padding: 20px;
-            td {
-              padding: 10px;
-            }
+      span {
+        font-size: 40px;
+      }
+    }
+  }
+  &__down {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    height: 300px;
+    margin: 0px 40px 0px 40px;
+    border-radius: 0px 0px 20px 20px;
+
+    &__details1 {
+      h3 {
+        margin: 50px 0px 20px 50px;
+      }
+      p {
+        margin: 0px 0px 0px 50px;
+        max-width: 350px;
+      }
+    }
+    &__details2 {
+      margin: 40px 40px 0px 0px;
+      table {
+        tr {
+          padding: 20px;
+          td {
+            padding: 10px;
           }
         }
       }
