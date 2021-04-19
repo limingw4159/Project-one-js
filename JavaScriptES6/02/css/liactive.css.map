@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,CAAC,YAAY,CAAC,SAAS,CAAC;EAC7B,aAAa,EAAE,GAAG;CACnB;;AAED,AAAA,IAAI,CAAC,aAAa,CAAC,cAAc,CAAC;EAChC,OAAO,EAAE,YAAY;EACrB,UAAU,EAAE,OAAO;CACpB",
-    "sources": [
-        "liactive.scss"
-    ],
-    "names": [],
-    "file": "liactive.css"
-}
