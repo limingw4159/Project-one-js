@@ -1,3 +1,121 @@
+.mainhome__resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.mainhome__resume .mainhome__resume__top {
+  position: relative;
+  text-align: center;
+  max-width: 1000px;
+  color: white;
+  background-image: url(../image/resume-backgournd.jpeg);
+  margin-top: 20px;
+  font-size: 50px;
+  height: 100px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.mainhome__resume .mainhome__resume__top p {
+  margin-top: 20px;
+}
+
+.mainhome__resume .mainhome__resume__middle {
+  position: relative;
+  background-color: white;
+}
+
+.mainhome__resume .mainhome__resume__middle > div {
+  margin-top: 40px;
+}
+
+.mainhome__resume .mainhome__resume__middle .mainhome__resume--details {
+  position: relative;
+  margin-top: 30px;
+}
+
+.mainhome__resume .mainhome__resume__middle .mainhome__resume--details > div {
+  border-left: 2px solid #b5b5b5;
+  width: 400px;
+  margin-left: 78px;
+  float: left;
+  max-height: 250px;
+}
+
+.mainhome__resume .mainhome__resume__middle .mainhome__resume--details .mainhome__resume__content {
+  margin-top: 30px;
+  position: relative;
+  width: 350px;
+  left: 0px;
+  margin-left: 45px;
+  border-left: #d3734a 2px solid;
+  border-radius: 5px;
+}
+
+.mainhome__resume .mainhome__resume__middle .mainhome__resume--details .mainhome__resume__content p {
+  padding: 10px 0px 5px 10px;
+}
+
+.mainhome__resume .mainhome__resume__down {
+  position: relative;
+  background-color: white;
+}
+
+.mainhome__resume .mainhome__resume__down > div {
+  margin-top: 40px;
+}
+
+.mainhome__resume .mainhome__resume__down .mainhome__resume__skill {
+  float: left;
+  top: 0px;
+  left: 0px;
+  width: 350px;
+  margin-left: 75px;
+}
+
+.mainhome__resume .mainhome__resume__down .mainhome__resume__skill p {
+  margin-bottom: 10px;
+}
+
+.circle {
+  position: absolute;
+  top: 11px;
+  left: -54px;
+  width: 15px;
+  height: 15px;
+  color: white;
+  border: 2px #d3734a solid;
+  border-radius: 50%;
+}
+
+.line {
+  position: absolute;
+  top: -7px;
+  left: -50px;
+  color: #d3734a;
+}
+
+.mainhome__resume--title {
+  padding: 50px;
+  margin-left: 25px;
+  margin-right: 260px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.progcontainer {
+  width: 350px;
+  height: 15px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -14,17 +132,18 @@ body {
 
 @media screen and (min-device-width: 720px) {
   header {
-    width: 90%;
-    margin: 10px auto;
-    height: 100px;
+    background-color: #babcbd;
+    width: 100%;
+    margin: 0px auto;
+    height: 70px;
     position: fixed;
     top: 0px;
-    left: 100px;
     z-index: 1;
   }
   header .nav__left {
     float: left;
-    margin-left: 10px;
+    margin-left: 70px;
+    margin-top: 10px;
     width: 170px;
     font-size: 30px;
     color: white;
@@ -33,7 +152,9 @@ body {
     color: #672ea0;
   }
   header .nav__right {
+    margin-top: 10px;
     float: right;
+    margin-right: 30px;
     padding: 20px;
   }
   header .nav__right li {
@@ -55,7 +176,7 @@ body {
     transition: width 0.3s;
   }
   header .nav__right li:hover::after {
-    border-bottom: 1px solid #00fef9;
+    border-bottom: 2px solid #00fef9;
     cursor: pointer;
     width: 100%;
     -webkit-transition: width 0.5s;
@@ -66,6 +187,7 @@ body {
     display: none;
   }
   .mainhome {
+    display: none;
     max-width: 1000px;
     margin: 100px auto;
     position: relative;

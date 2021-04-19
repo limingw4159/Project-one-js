@@ -1,3 +1,4 @@
+@import "resume";
 * {
   padding: 0;
   margin: 0;
@@ -13,16 +14,17 @@ body {
 
 @media screen and (min-device-width: 720px) {
   header {
-    width: 90%;
-    margin: 10px auto;
-    height: 100px;
+    background-color: rgb(186, 188, 189);
+    width: 100%;
+    margin: 0px auto;
+    height: 70px;
     position: fixed;
     top: 0px;
-    left: 100px;
     z-index: 1;
     .nav__left {
       float: left;
-      margin-left: 10px;
+      margin-left: 70px;
+      margin-top: 10px;
       width: 170px;
       font-size: 30px;
       color: white;
@@ -31,7 +33,9 @@ body {
       }
     }
     .nav__right {
+      margin-top: 10px;
       float: right;
+      margin-right: 30px;
       padding: 20px;
       li {
         padding: 20px;
@@ -50,7 +54,7 @@ body {
           transition: width 0.3s;
         }
         &:hover::after {
-          border-bottom: 1px solid rgb(0, 254, 249);
+          border-bottom: 2px solid rgb(0, 254, 249);
           cursor: pointer;
           width: 100%;
           transition: width 0.5s;
@@ -64,6 +68,7 @@ body {
   }
 
   .mainhome {
+    display: none;
     max-width: 1000px;
     margin: 100px auto;
     position: relative;

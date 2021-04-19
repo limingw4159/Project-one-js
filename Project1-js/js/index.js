@@ -2,6 +2,7 @@ window.addEventListener("load", function () {
   var nav_lis = document.querySelector(".nav__right");
   var lis = nav_lis.querySelectorAll("li");
   var mainHome = document.querySelectorAll(".mainhome");
+  var progressBar = document.querySelectorAll(".progressbar");
   init(mainHome);
 
   for (let i = 0; i < lis.length; i++) {
@@ -21,6 +22,7 @@ window.addEventListener("load", function () {
   }
 });
 
+//This is for the first inital web site
 function init(mainHome) {
   for (let i = 0; i < mainHome.length; i++) {
     mainHome[i].style.display = "none";
