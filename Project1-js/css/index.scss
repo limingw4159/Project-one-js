@@ -17,7 +17,7 @@ body {
     max-width: 80%;
     background-color: rgb(186, 188, 189);
     position: fixed;
-    margin: -100px auto;
+    margin: -150px auto;
     left: 0;
     right: 0;
     height: 70px;
@@ -71,15 +71,15 @@ body {
   .mainhome {
     display: none;
     max-width: 1000px;
-    margin: 100px auto;
+    margin: 150px auto;
     position: relative;
     &__top {
       display: flex;
       position: relative;
       background-color: rgb(45, 162, 211);
-      margin: 0px 40px 0px 40px;
-      padding: 20px;
-      height: 220px;
+      margin: 0px 0px 0px 0px;
+
+      height: 200px;
       border-radius: 20px 20px 0px 0px;
       justify-content: space-between;
 
@@ -118,7 +118,7 @@ body {
       background-color: white;
       padding: 20px;
       height: 300px;
-      margin: 0px 40px 0px 40px;
+      margin: 0px 0px 0px 0px;
       border-radius: 0px 0px 20px 20px;
 
       &__details1 {

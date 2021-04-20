@@ -1,10 +1,9 @@
 window.addEventListener("load", function () {
   new Tab(".nav__right", ".mainhome", "#mainacitive");
 });
-var that;
+
 class Tab {
   constructor(tabName, mainName) {
-    that = this;
     this.tab = document.querySelector(tabName);
     this.home = document.querySelectorAll(mainName);
 
@@ -12,17 +11,17 @@ class Tab {
     this.init();
   }
   init() {
-    for (var i = 0; i < this.lis.length; i++) {
+    for (let i = 0; i < this.lis.length; i++) {
       //add a property named index for each li
       this.lis[i].index = i;
-      this.lis[i].onclick = this.toggleTab;
+      this.lis[i].onclick = this.toggleTab.bind(this.lis[i], this);
     }
   }
-  toggleTab() {
+  toggleTab(that) {
     that.clearClass();
     this.className = "current";
     that.home[this.index].className = "mainhome mainacitive";
-    that.progBar(this.index);
+    that.progBar(this.index, that);
 
     // that.home[this.index].id = "asds";
   }
@@ -32,7 +31,7 @@ class Tab {
       this.home[i].className = "mainhome";
     }
   }
-  progBar(index) {
+  progBar(index, that) {
     if (index == 1) {
       that.progress = that.home[index].querySelectorAll(".progressbar");
       for (let i = 0; i < that.progress.length; i++) {
@@ -62,8 +61,8 @@ class Tab {
     }
   }
   animate(obj, width) {
-    var percent = 0;
-    var timer = setInterval(function () {
+    let percent = 0;
+    let timer = setInterval(function () {
       percent++;
       if (percent >= width) {
         clearInterval(timer);

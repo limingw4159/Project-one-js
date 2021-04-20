@@ -16,7 +16,6 @@
   max-width: 1000px;
   color: white;
   background-image: url(../image/resume-backgournd.jpeg);
-  margin-top: 20px;
   font-size: 50px;
   height: 100px;
   border-radius: 20px 20px 0px 0px;
@@ -141,7 +140,7 @@ body {
     max-width: 80%;
     background-color: #babcbd;
     position: fixed;
-    margin: -100px auto;
+    margin: -150px auto;
     left: 0;
     right: 0;
     height: 70px;
@@ -195,7 +194,7 @@ body {
   .mainhome {
     display: none;
     max-width: 1000px;
-    margin: 100px auto;
+    margin: 150px auto;
     position: relative;
   }
   .mainhome__top {
@@ -204,9 +203,8 @@ body {
     display: flex;
     position: relative;
     background-color: #2da2d3;
-    margin: 0px 40px 0px 40px;
-    padding: 20px;
-    height: 220px;
+    margin: 0px 0px 0px 0px;
+    height: 200px;
     border-radius: 20px 20px 0px 0px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -248,7 +246,7 @@ body {
     background-color: white;
     padding: 20px;
     height: 300px;
-    margin: 0px 40px 0px 40px;
+    margin: 0px 0px 0px 0px;
     border-radius: 0px 0px 20px 20px;
   }
   .mainhome__down__details1 h3 {
