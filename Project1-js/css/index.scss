@@ -12,20 +12,22 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (min-device-width: 720px) {
+@media screen and (min-device-width: 760px) {
   header {
+    max-width: 80%;
     background-color: rgb(186, 188, 189);
-    width: 100%;
-    margin: 0px auto;
-    height: 70px;
     position: fixed;
-    top: 0px;
+    margin: -100px auto;
+    left: 0;
+    right: 0;
+    height: 70px;
     z-index: 1;
+
     .nav__left {
       float: left;
-      margin-left: 70px;
+      margin-left: 50px;
       margin-top: 10px;
-      width: 170px;
+      width: 135px;
       font-size: 30px;
       color: white;
       span {
@@ -35,8 +37,7 @@ body {
     .nav__right {
       margin-top: 10px;
       float: right;
-      margin-right: 30px;
-      padding: 20px;
+      padding: 20px 0px 20px 0px;
       li {
         padding: 20px;
         list-style: none;
@@ -143,7 +144,7 @@ body {
     }
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 760px) {
   header {
     .nav__right {
       ul {
@@ -168,4 +169,8 @@ body {
 
 .current {
   border-bottom: 1px solid rgb(245, 132, 11);
+}
+
+.mainacitive {
+  display: block;
 }

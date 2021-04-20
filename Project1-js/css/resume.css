@@ -75,7 +75,7 @@
   float: left;
   top: 0px;
   left: 0px;
-  width: 350px;
+  width: 400px;
   margin-left: 75px;
 }
 
@@ -114,5 +114,11 @@
   height: 15px;
   margin-bottom: 10px;
   border: 1px solid gray;
+}
+
+.progressbar {
+  width: 0%;
+  background-color: #f5840b;
+  height: 100%;
 }
 /*# sourceMappingURL=resume.css.map */

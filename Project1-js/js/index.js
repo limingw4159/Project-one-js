@@ -1,31 +1,74 @@
 window.addEventListener("load", function () {
-  var nav_lis = document.querySelector(".nav__right");
-  var lis = nav_lis.querySelectorAll("li");
-  var mainHome = document.querySelectorAll(".mainhome");
-  var progressBar = document.querySelectorAll(".progressbar");
-  init(mainHome);
-
-  for (let i = 0; i < lis.length; i++) {
-    lis[i].setAttribute("index", i);
-    lis[i].onclick = function () {
-      for (let i = 0; i < lis.length; i++) {
-        lis[i].className = "";
-        var index = this.getAttribute("index");
-        for (let i = 0; i < mainHome.length; i++) {
-          mainHome[i].style.display = "none";
-        }
-
-        mainHome[index].style.display = "block";
-      }
-      this.className = "current";
-    };
-  }
+  new Tab(".nav__right", ".mainhome", "#mainacitive");
 });
+var that;
+class Tab {
+  constructor(tabName, mainName) {
+    that = this;
+    this.tab = document.querySelector(tabName);
+    this.home = document.querySelectorAll(mainName);
 
-//This is for the first inital web site
-function init(mainHome) {
-  for (let i = 0; i < mainHome.length; i++) {
-    mainHome[i].style.display = "none";
+    this.lis = this.tab.querySelectorAll("li");
+    this.init();
   }
-  mainHome[0].style.display = "block";
+  init() {
+    for (var i = 0; i < this.lis.length; i++) {
+      //add a property named index for each li
+      this.lis[i].index = i;
+      this.lis[i].onclick = this.toggleTab;
+    }
+  }
+  toggleTab() {
+    that.clearClass();
+    this.className = "current";
+    that.home[this.index].className = "mainhome mainacitive";
+    that.progBar(this.index);
+
+    // that.home[this.index].id = "asds";
+  }
+  clearClass() {
+    for (let i = 0; i < this.lis.length; i++) {
+      this.lis[i].className = "";
+      this.home[i].className = "mainhome";
+    }
+  }
+  progBar(index) {
+    if (index == 1) {
+      that.progress = that.home[index].querySelectorAll(".progressbar");
+      for (let i = 0; i < that.progress.length; i++) {
+        switch (i) {
+          case 0:
+            that.animate(that.progress[i], 80);
+            break;
+          case 1:
+            that.animate(that.progress[i], 90);
+            break;
+          case 2:
+            that.animate(that.progress[i], 70);
+            break;
+          case 3:
+            that.animate(that.progress[i], 90);
+            break;
+          case 4:
+            that.animate(that.progress[i], 80);
+            break;
+          case 5:
+            that.animate(that.progress[i], 95);
+            break;
+        }
+      }
+    } else {
+      return false;
+    }
+  }
+  animate(obj, width) {
+    var percent = 0;
+    var timer = setInterval(function () {
+      percent++;
+      if (percent >= width) {
+        clearInterval(timer);
+      }
+      obj.setAttribute("style", "width:" + percent + "%");
+    }, 10);
+  }
 }
