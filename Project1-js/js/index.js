@@ -32,23 +32,18 @@ class Tab {
   }
   progBar(index, that) {
     let arr = [80, 90, 70, 90, 80, 95];
-    if (index == 1) {
-      that.progress = that.home[index].querySelectorAll(".progressbar");
-      for (let i = 0; i < that.progress.length; i++) {
-        that.animate(that.progress[i], arr[i]);
-      }
-    } else {
-      return false;
+    that.progress = that.home[index].querySelectorAll(".progressbar");
+    for (let i = 0; i < that.progress.length; i++) {
+      that.animate(that.progress[i], arr[i]);
     }
   }
   animate(obj, width) {
     let percent = 0;
     let timer = setInterval(function () {
       percent++;
-      if (percent >= width) {
-        clearInterval(timer);
-      }
-      obj.setAttribute("style", "width:" + percent + "%");
+      percent >= width
+        ? clearInterval(timer)
+        : obj.setAttribute("style", "width:" + percent + "%");
     }, 10);
   }
 }
