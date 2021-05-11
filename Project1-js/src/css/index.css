@@ -121,6 +121,84 @@
   height: 100%;
 }
 
+.mainhome__service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.mainhome__service .service__top {
+  position: relative;
+  text-align: center;
+  max-width: 1000px;
+  color: white;
+  background-image: url(../image/resume-backgournd.jpeg);
+  font-size: 50px;
+  height: 100px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.mainhome__service .service__top p {
+  margin-top: 20px;
+}
+
+.mainhome__service .service__middle {
+  position: relative;
+  background-color: white;
+}
+
+.mainhome__service .service__middle p {
+  padding: 20px;
+  margin: 20px 0px 0px 20px;
+  font-size: 20px;
+}
+
+.mainhome__service .service__middle p span {
+  color: #d15727;
+}
+
+.mainhome__service .service__middle .myservice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainhome__service .service__middle .myservice div {
+  margin: 20px 40px 20px 40px;
+  max-width: 250px;
+}
+
+.mainhome__service .service__middle .myservice div div {
+  position: relative;
+  background-color: #b3b3b3;
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+}
+
+.mainhome__service .service__middle .myservice div div img {
+  position: absolute;
+  top: 10px;
+  left: 23px;
+  width: 100px;
+  padding: 20px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -220,6 +298,7 @@ body {
   }
   .mainhome__top div {
     float: right;
+    margin-right: 100px;
     text-align: center;
     color: #e17676;
     z-index: 1;
@@ -292,5 +371,37 @@ body {
 
 .mainacitive {
   display: block;
+}
+
+.mainhome__blog__top {
+  position: relative;
+  text-align: center;
+  max-width: 1000px;
+  color: white;
+  background-image: url(../image/resume-backgournd.jpeg);
+  font-size: 50px;
+  height: 100px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.mainhome__blog__top p {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.mainhome__contact__top {
+  position: relative;
+  text-align: center;
+  max-width: 1000px;
+  color: white;
+  background-image: url(../image/resume-backgournd.jpeg);
+  font-size: 50px;
+  height: 100px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.mainhome__contact__top p {
+  padding: 20px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=index.css.map */
