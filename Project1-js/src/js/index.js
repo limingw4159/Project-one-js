@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-  new Tab(".nav__right", ".mainhome", "#mainacitive");
+  new Tab(".right", ".mainhome", "#mainacitive");
 });
 var flag = true;
 class Tab {
@@ -7,6 +7,8 @@ class Tab {
     this.tab = document.querySelector(tabName);
     this.home = document.querySelectorAll(mainName);
     this.lis = this.tab.querySelectorAll("li");
+    this.a = this.tab.querySelectorAll("a");
+
     this.init();
   }
 
@@ -15,19 +17,20 @@ class Tab {
       //add a property named index for each li
       this.lis[i].index = i;
       this.lis[i].onclick = this.toggleTab.bind(this.lis[i], this);
-      console.log(flag);
+      this.a[i].addEventListener("click", function (e) {
+        e.preventDefault();
+      });
     }
   }
   toggleTab(that) {
     that.clearClass(this.index);
     this.className = "current";
     that.home[this.index].className = "mainhome mainacitive";
+
     if (this.index == 1 && flag == true) {
       flag = false;
       that.progBar(this.index, that);
     }
-
-    // that.home[this.index].id = "asds";
   }
   clearClass(index) {
     for (let i = 0; i < this.lis.length; i++) {

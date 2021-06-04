@@ -1,0 +1,115 @@
+$name-color: rgb(225, 118, 118);
+$navback-color: rgb(186, 188, 189);
+$nav-color: white;
+@mixin desktopheader {
+  max-width: 1500px;
+  background-color: $navback-color;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 1;
+  margin: 0 auto;
+  .left {
+    float: left;
+    margin-left: 50px;
+    margin-top: 15px;
+    width: 135px;
+    font-size: 30px;
+    color: white;
+    span {
+      color: $name-color;
+    }
+  }
+  .right {
+    float: right;
+    position: relative;
+    li {
+      padding: 25px 0px 10px 0px;
+      list-style: none;
+      float: left;
+      position: relative;
+      width: 60px;
+      margin: 0px 10px 0px 10px;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: $nav-color;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-bottom: 0px solid rgb(0, 254, 249);
+        transition: width 0.3s;
+      }
+      &:hover::after {
+        border-bottom: 2px solid rgb(0, 254, 249);
+        cursor: pointer;
+        width: 100%;
+        transition: width 0.5s;
+      }
+    }
+  }
+  .fa-list {
+    color: white;
+    display: none;
+  }
+}
+
+@mixin mobileheader {
+  .right {
+    z-index: 4;
+    ul {
+      position: absolute;
+      background-color: $navback-color;
+      margin-top: 70px;
+      transform: translateX(0%);
+      transition: transform 0.5s ease-in;
+      margin-bottom: 20px;
+      z-index: 3;
+
+      li {
+        margin: 10px 60px 10px 60px;
+        padding: 10px 0px 10px 0px;
+        width: 70px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: -5px;
+          left: 0;
+          width: 0;
+          height: 100%;
+          border-bottom: 0px solid rgb(0, 254, 249);
+          transition: width 0.3s;
+        }
+        &:hover::after {
+          border-bottom: 2px solid rgb(0, 254, 249);
+          cursor: pointer;
+          width: 100%;
+          transition: width 0.5s;
+        }
+      }
+    }
+    .fa-list {
+      position: absolute;
+      color: white;
+      display: block;
+      z-index: 2;
+      margin-top: 25px;
+      margin-left: -50px;
+      cursor: pointer;
+    }
+    .nav-active {
+      transform: translateX(-100%);
+      transition: transform 0.5s ease-in;
+    }
+    .nav-noactive {
+      transform: translateX(0%);
+      transition: transform 0.5s ease-in;
+    }
+  }
+}

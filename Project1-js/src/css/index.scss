@@ -1,5 +1,9 @@
 @import "resume";
 @import "service";
+@import "header";
+@import "mainhome";
+$break-point: 768px;
+
 * {
   padding: 0;
   margin: 0;
@@ -8,198 +12,54 @@
 
 html,
 body {
-  background-color: rgb(244, 239, 239);
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
-@media screen and (min-device-width: 760px) {
-  header {
+  @media screen and (min-width: $break-point) {
+    background-color: rgb(244, 239, 239);
     max-width: 1500px;
-    background-color: rgb(186, 188, 189);
-    position: fixed;
-    margin: -150px auto;
-    left: 0;
-    right: 0;
-    height: 70px;
-    z-index: 1;
-
-    .nav__left {
-      float: left;
-      margin-left: 50px;
-      margin-top: 10px;
-      width: 135px;
-      font-size: 30px;
-      color: white;
-      span {
-        color: rgb(103, 46, 160);
-      }
-    }
-    .nav__right {
-      margin-top: 10px;
-      float: right;
-      padding: 20px 0px 20px 0px;
-      li {
-        padding: 20px;
-        list-style: none;
-        float: left;
-        margin-top: -30px;
-        position: relative;
-        &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 0;
-          height: 100%;
-          border-bottom: 0px solid rgb(0, 254, 249);
-          transition: width 0.3s;
-        }
-        &:hover::after {
-          border-bottom: 2px solid rgb(0, 254, 249);
-          cursor: pointer;
-          width: 100%;
-          transition: width 0.5s;
-        }
-      }
-    }
-    .fa-list {
-      color: white;
-      display: none;
-    }
+    margin: 0 auto;
   }
-
-  .mainhome {
-    display: none;
-    max-width: 1000px;
-    margin: 150px auto;
-    position: relative;
-    &__top {
-      display: flex;
-      position: relative;
-      background-color: rgb(45, 162, 211);
-      margin: 0px 0px 0px 0px;
-      height: 200px;
-      border-radius: 20px 20px 0px 0px;
-      justify-content: space-between;
-
-      img {
-        // position: absolute;
-        float: left;
-        margin: 40px 50px 0px 50px;
-        border: white solid 2px;
-        width: 200px;
-        height: 200px;
-
-        z-index: 1;
-      }
-      div {
-        float: right;
-        margin-right: 100px;
-        text-align: center;
-        color: rgb(225, 118, 118);
-        z-index: 1;
-
-        p {
-          margin-top: 50px;
-          font-size: 50px;
-        }
-        span {
-          font-size: 40px;
-        }
-      }
-    }
-    &__down {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-
-      position: relative;
-      background-color: white;
-      padding: 20px;
-      height: 300px;
-      margin: 0px 0px 0px 0px;
-      border-radius: 0px 0px 20px 20px;
-
-      &__details1 {
-        h3 {
-          margin: 50px 0px 20px 50px;
-        }
-        p {
-          margin: 0px 0px 0px 50px;
-          max-width: 350px;
-        }
-      }
-      &__details2 {
-        margin: 40px 40px 0px 0px;
-        table {
-          tr {
-            padding: 20px;
-            td {
-              padding: 10px;
-            }
-          }
-        }
-      }
-    }
+  @media screen and (max-width: $break-point) {
+    margin: 0px 3px 0px 3px;
   }
 }
-@media screen and (max-width: 760px) {
-  header {
-    .nav__right {
-      ul {
-        display: none;
-      }
+
+header {
+  @media screen and (min-width: $break-point) {
+    @include desktopheader;
+  }
+
+  @media screen and (max-width: $break-point) {
+    @include desktopheader;
+    @include mobileheader;
+  }
+}
+#mainactive {
+  display: block;
+}
+main {
+  @media screen and (min-width: $break-point) {
+    @include mainhome;
+    @include resume;
+    @include service;
+    .current {
+      border-bottom: 1px solid rgb(245, 132, 11);
     }
-    .fa-list {
-      position: absolute;
-      margin: -10px -60px;
+
+    .mainacitive {
       display: block;
     }
   }
-}
 
-.clearfix:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
+  @media screen and (max-width: $break-point) {
+    @include mainhome;
+    @include resume;
+    @include service;
+    @include mobilehome;
+    .current {
+      border-bottom: 1px solid rgb(245, 132, 11);
+    }
 
-.current {
-  border-bottom: 1px solid rgb(245, 132, 11);
-}
-
-.mainacitive {
-  display: block;
-}
-.mainhome__blog__top {
-  position: relative;
-  text-align: center;
-  max-width: 1000px;
-  color: white;
-  background-image: url(../image/resume-backgournd.jpeg);
-  font-size: 50px;
-  height: 100px;
-  border-radius: 20px 20px 20px 20px;
-  p {
-    padding: 20px;
-    margin-top: 20px;
-  }
-}
-
-.mainhome__contact__top {
-  position: relative;
-  text-align: center;
-  max-width: 1000px;
-  color: white;
-  background-image: url(../image/resume-backgournd.jpeg);
-  font-size: 50px;
-  height: 100px;
-  border-radius: 20px 20px 20px 20px;
-  p {
-    padding: 20px;
-    margin-top: 20px;
+    .mainacitive {
+      display: block;
+    }
   }
 }

@@ -1,0 +1,152 @@
+@mixin mainhome {
+  .mainhome {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    display: none;
+    &__top {
+      display: flex;
+      position: relative;
+      background-color: rgb(45, 162, 211);
+      margin: 0px 0px 0px 0px;
+      height: 200px;
+      border-radius: 20px 20px 0px 0px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      img {
+        float: left;
+        margin: 40px 50px 0px 65px;
+        border: white solid 2px;
+        width: 200px;
+        height: 200px;
+        z-index: 1;
+      }
+      div {
+        float: right;
+        margin-right: 145px;
+        text-align: center;
+        color: rgb(225, 118, 118);
+        z-index: 1;
+
+        p {
+          margin-top: 50px;
+          font-size: 50px;
+        }
+        span {
+          font-size: 40px;
+        }
+      }
+    }
+    &__down {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+
+      position: relative;
+      background-color: white;
+      padding: 20px;
+      height: 300px;
+      margin: 0px 0px 0px 0px;
+      border-radius: 0px 0px 20px 20px;
+
+      &__details1 {
+        h3 {
+          margin: 50px 0px 20px 50px;
+        }
+        p {
+          margin: 0px 0px 0px 50px;
+          max-width: 350px;
+        }
+      }
+      &__details2 {
+        margin: 40px 40px 0px 0px;
+        table {
+          tr {
+            padding: 20px;
+            td {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin mobilehome {
+  .mainhome {
+    &__top {
+      display: block;
+      height: 500px;
+      width: 100%;
+
+      img {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        position: relative;
+        border: white solid 2px;
+        top: 100px;
+        z-index: 0;
+      }
+      div {
+        position: relative;
+        display: block;
+        float: none;
+        top: 50px;
+        margin: 0 auto;
+        text-align: center;
+        color: rgb(225, 118, 118);
+        z-index: 1;
+
+        p {
+          margin-top: 50px;
+          font-size: 50px;
+        }
+        span {
+          font-size: 40px;
+        }
+      }
+    }
+    &__down {
+      display: block;
+      position: relative;
+      background-color: white;
+      padding: 20px;
+      height: 600px;
+      margin: 0 auto;
+      border-radius: 0px 0px 20px 20px;
+      flex-wrap: wrap;
+
+      &__details1 {
+        margin: 0 auto;
+        h3 {
+          padding: 20px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        p {
+          padding: 0px;
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+      &__details2 {
+        padding: 10px;
+        margin: 0 auto;
+        text-align: center;
+        table {
+          padding: 10px;
+          margin: 0 auto;
+          text-align: center;
+          tr {
+            padding: 20px;
+            td {
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
