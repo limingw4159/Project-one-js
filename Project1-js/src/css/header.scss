@@ -67,6 +67,7 @@ $nav-color: white;
       background-color: $navback-color;
       margin-top: 70px;
       transform: translateX(0%);
+
       transition: transform 0.5s ease-in;
       margin-bottom: 20px;
       z-index: 3;
@@ -104,6 +105,7 @@ $nav-color: white;
     }
     .nav-active {
       transform: translateX(-100%);
+      // margin-left: -185px;
       transition: transform 0.5s ease-in;
     }
     .nav-noactive {

@@ -3,10 +3,12 @@ const navSlide = () => {
   const nav = document.querySelector("nav>ul");
 
   menu.addEventListener("click", () => {
-    nav.className = "nav-active";
+    nav.classList.toggle("nav-active");
+    console.log(nav);
   });
   nav.addEventListener("click", () => {
-    nav.className = "nav-noactive";
+    nav.classList.remove("nav-active");
+    nav.classList.toggle("nav-nonactive");
   });
 };
 
