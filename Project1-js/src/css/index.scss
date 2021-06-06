@@ -2,6 +2,7 @@
 @import "service";
 @import "header";
 @import "mainhome";
+@import "contact";
 $break-point: 768px;
 
 * {
@@ -40,6 +41,7 @@ main {
     @include mainhome;
     @include resume;
     @include service;
+    @include contact;
     .current {
       border-bottom: 1px solid rgb(245, 132, 11);
     }

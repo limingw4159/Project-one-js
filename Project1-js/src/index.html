@@ -262,8 +262,18 @@
         </div>
       </div>
       <div class="mainhome">
-        <div class="mainhome__contact__top">
-          <p>Please Wait......</p>
+        <div class="mainhome__contact">
+          <div class="contact__top">
+            <p>Contact</p>
+          </div>
+          <div class="contact__down">
+            <div class="contact__left">
+              <p>Get in <span>Touch</span></p>
+              <div class="contact__left__map" id="map"></div>
+              <div></div>
+            </div>
+            <div class="contact__right"></div>
+          </div>
         </div>
       </div>
     </main>
@@ -278,5 +288,9 @@
       charset="utf-8"
     ></script>
     <script src="./js/sidebar.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
   </body>
 </html>
