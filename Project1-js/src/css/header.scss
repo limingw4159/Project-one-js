@@ -8,7 +8,7 @@ $nav-color: white;
   left: 0;
   right: 0;
   height: 70px;
-  z-index: 1;
+  z-index: 2;
   margin: 0 auto;
   .left {
     float: left;
@@ -62,7 +62,6 @@ $nav-color: white;
 
 @mixin mobileheader {
   .right {
-    z-index: 4;
     ul {
       position: absolute;
       background-color: $navback-color;

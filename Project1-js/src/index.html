@@ -270,9 +270,34 @@
             <div class="contact__left">
               <p>Get in <span>Touch</span></p>
               <div class="contact__left__map" id="map"></div>
-              <div></div>
+              <div class="contact__left__details">
+                <div><i class="fas fa-compass"></i>Hobart, Australia</div>
+                <div>
+                  <i class="fas fa-envelope-square"></i>liming124@gmail.com
+                </div>
+                <div><i class="fas fa-envelope-square"></i>+61 1124435123</div>
+              </div>
             </div>
-            <div class="contact__right"></div>
+            <div class="contact__right">
+              <p>Contact <span>Form</span></p>
+              <input
+                type="text"
+                class="contact__right__name"
+                placeholder="Full Name"
+              />
+              <input
+                type="text"
+                class="contact__right__email"
+                placeholder="Email Address"
+              />
+              <textarea 
+                type="text"
+                class="contact__right__message"
+                placeholder="Message For Me."
+                cols="48" rows="10"
+              /></textarea>
+              <button class="contact__right__send" > Send Message</button>
+            </div>
           </div>
         </div>
       </div>
@@ -288,8 +313,9 @@
       charset="utf-8"
     ></script>
     <script src="./js/sidebar.js"></script>
+    <script src="./js/map.js"></script>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdw-we4GvOdDYzc3wwPykxYsma-88K_d8&callback=initMap&libraries=&v=weekly"
       async
     ></script>
   </body>

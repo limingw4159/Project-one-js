@@ -33,9 +33,7 @@ header {
     @include mobileheader;
   }
 }
-#mainactive {
-  display: block;
-}
+
 main {
   @media screen and (min-width: $break-point) {
     @include mainhome;
@@ -56,6 +54,8 @@ main {
     @include resume;
     @include service;
     @include mobilehome;
+    @include contact;
+    @include mobilecontact;
     .current {
       border-bottom: 1px solid rgb(245, 132, 11);
     }

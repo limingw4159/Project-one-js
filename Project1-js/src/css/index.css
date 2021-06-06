@@ -29,7 +29,7 @@
     left: 0;
     right: 0;
     height: 70px;
-    z-index: 1;
+    z-index: 2;
     margin: 0 auto;
   }
   header .left {
@@ -92,7 +92,7 @@
     left: 0;
     right: 0;
     height: 70px;
-    z-index: 1;
+    z-index: 2;
     margin: 0 auto;
   }
   header .left {
@@ -144,9 +144,6 @@
   header .fa-list {
     color: white;
     display: none;
-  }
-  header .right {
-    z-index: 4;
   }
   header .right ul {
     position: absolute;
@@ -209,10 +206,6 @@
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
-}
-
-#mainactive {
-  display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -502,14 +495,16 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     background-color: white;
-    height: 700px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     border-radius: 0px 0px 20px 20px;
   }
   main .mainhome__contact .contact__down .contact__left {
-    top: 20px;
     position: relative;
-    max-width: 50%;
+    max-width: 500px;
     left: 10px;
+    margin: 20px 0px 50px 10px;
   }
   main .mainhome__contact .contact__down .contact__left p {
     font-size: 25px;
@@ -517,9 +512,60 @@
   main .mainhome__contact .contact__down .contact__left p span {
     color: #e17676;
   }
+  main .mainhome__contact .contact__down .contact__left .contact__left__map {
+    margin-top: 20px;
+    width: 400px;
+    height: 300px;
+  }
+  main .mainhome__contact .contact__down .contact__left .contact__left__details .fa-compass {
+    color: #a8a6a6;
+  }
+  main .mainhome__contact .contact__down .contact__left .contact__left__details .fa-envelope-square {
+    color: #a8a6a6;
+  }
+  main .mainhome__contact .contact__down .contact__left .contact__left__details div {
+    margin-top: 20px;
+    padding: 0px 0px 0px 3px;
+    font-size: 18px;
+  }
   main .mainhome__contact .contact__down .contact__right {
+    top: 20px;
+    left: 10px;
     position: relative;
-    max-width: 50%;
+    max-width: 500px;
+  }
+  main .mainhome__contact .contact__down .contact__right p {
+    font-size: 25px;
+  }
+  main .mainhome__contact .contact__down .contact__right p span {
+    color: #e17676;
+  }
+  main .mainhome__contact .contact__down .contact__right input {
+    margin: 20px 20px 20px 0px;
+    height: 50px;
+    width: 400px;
+    border: hidden;
+    background-color: #e9e8e8;
+  }
+  main .mainhome__contact .contact__down .contact__right__message {
+    height: 138px;
+    width: 400px;
+    border: hidden;
+    background-color: #e9e8e8;
+    resize: none;
+  }
+  main .mainhome__contact .contact__down .contact__right__send {
+    margin-top: 20px;
+    display: inline;
+    width: 120px;
+    height: 40px;
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  main .mainhome__contact .contact__down .contact__right__send:hover {
+    background-color: #3498db;
   }
   main .current {
     border-bottom: 1px solid #f5840b;
@@ -851,6 +897,154 @@
   }
   main .mainhome__down__details2 table tr td {
     padding: 10px;
+  }
+  main .mainhome__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .mainhome__contact .contact__top {
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    color: white;
+    background-image: url(../image/resume-backgournd.jpeg);
+    font-size: 50px;
+    height: 100px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  main .mainhome__contact .contact__top p {
+    margin-top: 20px;
+  }
+  main .mainhome__contact .contact__down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: white;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 0px 0px 20px 20px;
+  }
+  main .mainhome__contact .contact__down .contact__left {
+    position: relative;
+    max-width: 500px;
+    left: 10px;
+    margin: 20px 0px 50px 10px;
+  }
+  main .mainhome__contact .contact__down .contact__left p {
+    font-size: 25px;
+  }
+  main .mainhome__contact .contact__down .contact__left p span {
+    color: #e17676;
+  }
+  main .mainhome__contact .contact__down .contact__left .contact__left__map {
+    margin-top: 20px;
+    width: 400px;
+    height: 300px;
+  }
+  main .mainhome__contact .contact__down .contact__left .contact__left__details .fa-compass {
+    color: #a8a6a6;
+  }
+  main .mainhome__contact .contact__down .contact__left .contact__left__details .fa-envelope-square {
+    color: #a8a6a6;
+  }
+  main .mainhome__contact .contact__down .contact__left .contact__left__details div {
+    margin-top: 20px;
+    padding: 0px 0px 0px 3px;
+    font-size: 18px;
+  }
+  main .mainhome__contact .contact__down .contact__right {
+    top: 20px;
+    left: 10px;
+    position: relative;
+    max-width: 500px;
+  }
+  main .mainhome__contact .contact__down .contact__right p {
+    font-size: 25px;
+  }
+  main .mainhome__contact .contact__down .contact__right p span {
+    color: #e17676;
+  }
+  main .mainhome__contact .contact__down .contact__right input {
+    margin: 20px 20px 20px 0px;
+    height: 50px;
+    width: 400px;
+    border: hidden;
+    background-color: #e9e8e8;
+  }
+  main .mainhome__contact .contact__down .contact__right__message {
+    height: 138px;
+    width: 400px;
+    border: hidden;
+    background-color: #e9e8e8;
+    resize: none;
+  }
+  main .mainhome__contact .contact__down .contact__right__send {
+    margin-top: 20px;
+    display: inline;
+    width: 120px;
+    height: 40px;
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  main .mainhome__contact .contact__down .contact__right__send:hover {
+    background-color: #3498db;
+  }
+  main .mainhome__contact .contact__down .contact__left {
+    margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 0;
+  }
+  main .mainhome__contact .contact__down .contact__right {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 0;
+  }
+  main .mainhome__contact .contact__down .contact__right__message {
+    margin-left: -19px;
   }
   main .current {
     border-bottom: 1px solid #f5840b;
