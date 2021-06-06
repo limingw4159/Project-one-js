@@ -14,7 +14,6 @@ $break-point: 768px;
 html,
 body {
   @media screen and (min-width: $break-point) {
-    background-color: rgb(244, 239, 239);
     max-width: 1500px;
     margin: 0 auto;
   }
@@ -64,4 +63,13 @@ main {
       display: block;
     }
   }
+}
+
+footer {
+  display: block;
+  margin-top: 200px;
+  width: 100%;
+  color: rgb(225, 118, 118);
+  text-align: center;
+  font-size: small;
 }

@@ -8,7 +8,6 @@
 @media screen and (min-width: 768px) {
   html,
   body {
-    background-color: #f4efef;
     max-width: 1500px;
     margin: 0 auto;
   }
@@ -265,7 +264,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
     position: relative;
-    background-color: white;
+    background-color: #f8f8f8;
     padding: 20px;
     height: 300px;
     margin: 0px 0px 0px 0px;
@@ -313,7 +312,7 @@
   }
   main .mainhome__resume .mainhome__resume__middle {
     position: relative;
-    background-color: white;
+    background-color: #f8f8f8;
   }
   main .mainhome__resume .mainhome__resume__middle > div {
     margin-top: 40px;
@@ -343,7 +342,8 @@
   }
   main .mainhome__resume .mainhome__resume__down {
     position: relative;
-    background-color: white;
+    background-color: #f8f8f8;
+    border-radius: 0px 0px 20px 20px;
   }
   main .mainhome__resume .mainhome__resume__down > div {
     margin-top: 40px;
@@ -354,6 +354,7 @@
     left: 0px;
     width: 400px;
     margin-left: 75px;
+    margin-bottom: 50px;
   }
   main .mainhome__resume .mainhome__resume__down .mainhome__resume__skill p {
     margin-bottom: 10px;
@@ -418,7 +419,7 @@
   }
   main .mainhome__service .service__middle {
     position: relative;
-    background-color: white;
+    background-color: #f8f8f8;
   }
   main .mainhome__service .service__middle p {
     padding: 20px;
@@ -494,7 +495,7 @@
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-color: white;
+    background-color: #f8f8f8;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -632,7 +633,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
     position: relative;
-    background-color: white;
+    background-color: #f8f8f8;
     padding: 20px;
     height: 300px;
     margin: 0px 0px 0px 0px;
@@ -680,7 +681,7 @@
   }
   main .mainhome__resume .mainhome__resume__middle {
     position: relative;
-    background-color: white;
+    background-color: #f8f8f8;
   }
   main .mainhome__resume .mainhome__resume__middle > div {
     margin-top: 40px;
@@ -710,7 +711,8 @@
   }
   main .mainhome__resume .mainhome__resume__down {
     position: relative;
-    background-color: white;
+    background-color: #f8f8f8;
+    border-radius: 0px 0px 20px 20px;
   }
   main .mainhome__resume .mainhome__resume__down > div {
     margin-top: 40px;
@@ -721,6 +723,7 @@
     left: 0px;
     width: 400px;
     margin-left: 75px;
+    margin-bottom: 50px;
   }
   main .mainhome__resume .mainhome__resume__down .mainhome__resume__skill p {
     margin-bottom: 10px;
@@ -785,7 +788,7 @@
   }
   main .mainhome__service .service__middle {
     position: relative;
-    background-color: white;
+    background-color: #f8f8f8;
   }
   main .mainhome__service .service__middle p {
     padding: 20px;
@@ -932,7 +935,7 @@
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-color: white;
+    background-color: #f8f8f8;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1052,5 +1055,14 @@
   main .mainacitive {
     display: block;
   }
+}
+
+footer {
+  display: block;
+  margin-top: 200px;
+  width: 100%;
+  color: #e17676;
+  text-align: center;
+  font-size: small;
 }
 /*# sourceMappingURL=index.css.map */
